@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Royalpriest Babalola" />
+    <meta
+      name="description"
+      content="A glimpse into my Bio, learn about my skills, Highlights of my project"
+    />
+    <meta name="Keywords" content="My Bio, skills, projects" />
+    <!-- Animation Library (Animate.css) library-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- AOs(Animate on scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=League+Gothic&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+     <!-- page title -->
+    <title>Royalpriest's Portfolio</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <!-- 
+  
+       To use the AOS (Animate On Scroll) library:
+       You addd the attribute data-aos="zoom-in-down" (or any other effect) 
+       to the HTML element (such as <div>, <p>, <h1>, etc.) where you want the animation to occur.
+       it take effect whenever the page contents comes in view when scrolling
+  
+  -->
+   
+  <body id="portfolio">
+    <header>
+
+      <!-- menu toggle -->
+      <button class="nav-toggle" onclick="toggleNav()" id="menuButton">
+        [Menu]
+      </button>
+      <div class="header-container">
+        <div class="logo">
+          <img src="images/logo.png" alt="Logo" />
+        </div>
+
+        <nav id="Nav">
+          <ul>
+            <li><a href="#projects">[projects]</a></li>
+            <li><a href="#TechSkills">[Tech Skills]</a></li>
+            <li><a href="#about">[About me]</a></li>
+            <li><a href="#contact">[Contact]</a></li>
+            <li>
+              <button onclick="toggleTheme()" class="theme-toggle">
+                <img src="images/moon3.svg" alt="dark-mode-icon" />
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <div class="intro-content animate__animated animate__zoomInLeft">
+          <div class="intro-message  ">
+            <h1>Hello, My name is Royalpriest.</h1>
+            <p>
+              I'm a web developer who loves building creative and one of a kind
+              projects. Scroll through and check out my work, there's plenty to
+              discover!
+            </p>
+          </div>
+          <img src="images/avatar8.jpeg" alt="Royalpriest's avatar" />
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="projects-header">
+          <h1>My Works</h1>
+        </div>
+        <div class="projects-container">
+          <div class="project-card" data-aos="zoom-in-down">
+            <div class="project-video">
+              <video autoplay muted loop playsinline>
+                <source src="videos/app_ecom1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project-text">
+              <h2>ShopRadar</h2>
+              <p>
+                A web app that helps you find the best deals on products from
+                your favorite stores, all in one place.
+              </p>
+              <div class="links">
+                <a href="https://github.com/royalpriest">Github</a>
+                <a href="#">View site↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="zoom-in-down">
+            <div class="project-video">
+              <video autoplay muted loop playsinline>
+                <source src="videos/car.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project-text">
+              <h2>Ford Motor Company</h2>
+              <p>
+                A group project to build a responsive Ford-themed vehicle
+                website. I handled front-end development.
+              </p>
+              <div class="links">
+                <a href="https://github.com/royalpriest">Github</a>
+                <a href="https://ford-motor-company.netlify.app/">View site↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="zoom-in-down">
+            <div class="project-video">
+              <video autoplay muted loop playsinline>
+                <source src="videos/Renting_Real_Estate1.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="project-text">
+              <h2>HousePlug</h2>
+              <p>
+                A web app that links you directly with agents in real time to
+                rent or buy the right home.
+              </p>
+              <div class="links">
+                <a href="https://github.com/royalpriest">Github</a>
+                <a href="#">View site↗</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="zoom-in-down">
+            <div class="project-image">
+              <img src="images/app_fin2.jpg" alt="PennyWise app screenshot" />
+            </div>
+            <div class="project-text">
+              <h2>PennyWise</h2>
+              <p>
+                A web app that helps you track your expenses, save smarter, and
+                build your credit score all in one place.
+              </p>
+              <div class="links">
+                <a href="https://github.com/royalpriest">Github</a>
+                <a href="#">View site↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <div class="aboutMe">
+          <div class="myBio">
+            <h2 data-aos="zoom-in-down">My Profile</h2>
+            <p data-aos="zoom-in-down">
+              Hey again!! You made it this far? Absolute legend.I'm a creative web
+              developer who loves building unique, user friendly websites and
+              web apps. I enjoy turning ideas into clean code with smooth
+              animations and thoughtful design.
+            </p>
+            <p data-aos="zoom-in-down">
+              When I’m not coding, you’ll probably find me diving into comic
+              books, manga, movies, TV shows, or video games, I’m all about
+              great stories and immersive experiences. Whether it’s through code
+              or creativity, I love bringing cool ideas to life.
+            </p>
+          </div>
+          <div class="aboutMe-img" data-aos="zoom-in-down">
+            <img src="images/avatar5.jpeg" alt="Black-boy-dreads" />
+          </div>
+        </div>
+      </section>
+
+      <section id="TechSkills" class="Skills">
+        <h2 data-aos="zoom-in-down">My Skills</h2>
+        <div class="mySkills" data-aos="zoom-in-down">
+          <ul>
+            <li>
+              <img src="images/css3.icon.svg" alt="" />
+              <span>CSS3</span>
+            </li>
+
+            <li>
+              <img src="images/github.icon.svg" alt="Github-icon" />
+              <span>GITHUB</span>
+            </li>
+
+            <li>
+              <img src="images/html.icon.svg" alt="HTML-icon" />
+              <span>HTML5</span>
+            </li>
+
+            <li>
+              <img src="images/java-script.icon.svg" alt="Javascript-icon" />
+              <span>JAVASCRIPT</span>
+            </li>
+
+            <li>
+              <img src="images/php.icon.svg" alt="Php-icon" />
+              <span>PHP</span>
+            </li>
+
+            <li>
+              <img src="images/python.icon.svg" alt="python-icon" />
+              <span>PYTHON</span>
+            </li>
+
+            <li>
+              <img src="images/c++.svg" alt="Cplusplus-icon" />
+              <span>C++</span>
+            </li>
+
+            <li>
+              <img src="images/java.svg" alt="java-icon" />
+              <span>JAVA</span>
+            </li>
+
+            <li>
+              <img src="images/json2.svg" alt="Json-icon" />
+              <span>JSON</span>
+            </li>
+
+            <li>
+              <img src="images/react.icon.svg" alt="React-icon" />
+              <span>REACT</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="Contact-me">
+          <h2 data-aos="zoom-in-down">Let's work together</h2>
+          <p data-aos="zoom-in-down">
+            Feel free to get in contact with me through the form below
+          </p>
+          <ul>
+            <li data-aos="zoom-in-down">
+              <a href="https://github.com/royalpriest"
+                ><img src="images/githubext.svg" alt="githun-icon"
+              /></a>
+            </li>
+            <li data-aos="zoom-in-down">
+              <a href="#"
+                ><img src="images/linkedinext.svg" alt="linkedin-icon"
+              /></a>
+            </li>
+            <li data-aos="zoom-in-down">
+              <a href="#"><img src="images/twitterext.svg" alt="twitter-icon" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="con-form">
+          <form action="post">
+            <div class="form-info" data-aos="zoom-in-down">
+              <label for="name"></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your Name"
+              />
+            </div>
+
+            <div class="form-info" data-aos="zoom-in-down">
+              <label for="email"></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+              />
+            </div>
+
+            <div class="form-info" data-aos="zoom-in-down">
+              <label for="message"></label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Royalpriest Portfolio. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
